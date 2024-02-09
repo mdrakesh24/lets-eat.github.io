@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/fav.png" type="image/x-icon">
     <title>Let's Eat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Overpass:wght@300&family=Righteous&family=Roboto&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Overpass:wght@300&family=Righteous&family=Roboto&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
     <header>
-        <a class="logo" href="#"><i class='bx bx-restaurant' ></i> Let's <span>Eat</span></a>
+        <a class="logo" href="#"><i class='bx bx-restaurant'></i> Let's <span>Eat</span></a>
 
         <ul id="menu">
             <li><a href="#home">Home</a></li>
@@ -30,19 +36,99 @@
         </div>
     </header>
 
-    <section class="home" id="home">
-        <div class="full">
-            <div class="left">
-                <h1>Let's <span id="st">Meet</span>, <span id="nd">Eat</span>,<br>and <span id="rd">Celebrate!</span></h1>
-                <div class="btn">
-                    <button>Explore Menu</button>
-                    <button>Order Now</button>
+    <section class="home swiper mySwiper" id="home">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="./image/back1.jpg" alt="" class="image">
+                <div class="image-data">
+                    <h1>Let's <span id="st">Meet</span>, <span id="nd">Eat</span>,<br>and <span
+                            id="rd">Celebrate!</span>
+                    </h1>
+                    <p>Where culinary delights meet exceptional service. <br> Taste the difference at our restaurant–your palate's perfect destination</p>
+                    <br>
+                    <div class="btn">
+                        <a href="#food"><button>Order Now</button></a>
+                        <a href="#"><button>Log In</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="right">
-                <img src="./image/home.png" alt="bg-image">
+
+            <div class="slide swiper-slide">
+                <img src="./image/back2.jpg" alt="" class="image">
+                <div class="image-data">
+                    <h1>Let's <span id="st">Meet</span>, <span id="nd">Eat</span>,<br>and <span
+                            id="rd">Celebrate!</span>
+                    </h1>
+                    <p>Where culinary delights meet exceptional service. <br> Taste the difference at our restaurant–your palate's perfect destination</p>
+                    <br>
+                    <div class="btn">
+                        <a href="#food"><button>Order Now</button></a>
+                        <a href="#"><button>Log In</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="./image/back3.jpg" alt="" class="image">
+                <div class="image-data">
+                    <h1>Let's <span id="st">Meet</span>, <span id="nd">Eat</span>,<br>and <span
+                            id="rd">Celebrate!</span>
+                    </h1>
+                    <p>Where culinary delights meet exceptional service. <br> Taste the difference at our restaurant–your palate's perfect destination</p>
+                    <br>
+                    <div class="btn">
+                        <a href="#food"><button>Order Now</button></a>
+                        <a href="#"><button>Log In</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="./image/back4.jpg" alt="" class="image">
+                <div class="image-data">
+                    <h1>Let's <span id="st">Meet</span>, <span id="nd">Eat</span>,<br>and <span
+                            id="rd">Celebrate!</span>
+                    </h1>
+                    <p>Where culinary delights meet exceptional service. <br> Taste the difference at our restaurant–your palate's perfect destination</p>
+                    <br>
+                    <div class="btn">
+                        <a href="#food"><button>Order Now</button></a>
+                        <a href="#"><button>Log In</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="./image/back5.jpg" alt="" class="image">
+                <div class="image-data">
+                    <h1>Let's <span id="st">Meet</span>, <span id="nd">Eat</span>,<br>and <span
+                            id="rd">Celebrate!</span>
+                    </h1>
+                    <p>Where culinary delights meet exceptional service. <br> Taste the difference at our restaurant–your palate's perfect destination</p>
+                    <br>
+                    <div class="btn">
+                        <a href="#food"><button>Order Now</button></a>
+                        <a href="#"><button>Log In</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="./image/back6.jpg" alt="" class="image">
+                <div class="image-data">
+                    <h1>Let's <span id="st">Meet</span>, <span id="nd">Eat</span>,<br>and <span
+                            id="rd">Celebrate!</span>
+                    </h1>
+                    <p>Where culinary delights meet exceptional service. <br> Taste the difference at our restaurant–your palate's perfect destination</p>
+                    <br>
+                    <div class="btn">
+                        <a href="#food"><button>Order Now</button></a>
+                        <a href="#"><button>Log In</button></a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
     <section class="container">
@@ -69,23 +155,29 @@
             <img src="./image/about.png" alt="">
         </div>
         <div class="abt-text">
-        <h2>Living <span>Well</span><br> Begins with <span>Eating</span> Well.</h2>
-        <p>Welcome to "Let's Eat," a culinary haven where flavors dance and appetites rejoice. Situatedin the heart of the city, this restaurant offers a delightful dining experience with a touch ofcreativity. Step into a vibrant and modern space, adorned with local art, setting the stage formemorable gatherings. Our talented chefs curate an eclectic menu, celebrating the finestingredients from nearby farms and international inspirations. Savor mouthwatering steaks,delectable vegetarian delights, and indulgent desserts, each dish a work of art. Impeccableservice ensures every guest feels welcomed and cherished. Embrace the joy of eating at "Let's Eat" where taste takes center stage.</p>
-        <button><i class='bx bxs-right-arrow' style='color:#ffffff'></i> Explore More</button>
+            <h2>Living <span>Well</span><br> Begins with <span>Eating</span> Well.</h2>
+            <p>Welcome to "Let's Eat," a culinary haven where flavors dance and appetites rejoice. Situatedin the heart
+                of the city, this restaurant offers a delightful dining experience with a touch ofcreativity. Step into
+                a vibrant and modern space, adorned with local art, setting the stage formemorable gatherings. Our
+                talented chefs curate an eclectic menu, celebrating the finestingredients from nearby farms and
+                international inspirations. Savor mouthwatering steaks,delectable vegetarian delights, and indulgent
+                desserts, each dish a work of art. Impeccableservice ensures every guest feels welcomed and cherished.
+                Embrace the joy of eating at "Let's Eat" where taste takes center stage.</p>
+            <button><i class='bx bxs-right-arrow' style='color:#ffffff'></i> Explore More</button>
         </div>
     </section>
 
 
     <section class="food" id="food">
         <div class="fd1">
-            <h2>Our Food</h2>
+            <h2>Our Best Selling Food</h2>
             <h4>Let's Explore our Best Dishes</h4>
         </div>
         <div class="fd2">
             <div class="f1">
                 <img src="./image/food1.png" alt="Biryani">
                 <h4>Chicken Dum Biryani</h4>
-                <h5>250 /-</h5>
+                <h5>250 /-</h5> 
             </div>
             <div class="f2">
                 <img src="./image/food2.png" alt="Paneer">
@@ -136,21 +228,50 @@
 
     <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <form action="submit">
-            <p>Name: <br> <input type="text" name="name" placeholder="Enter your Name"></p>
-            <p>Email: <br> <input type="email" name="email" id="email" placeholder="yourname@gmail.com"></p>
-            <p>Subject: <br> <select name="subject" id="subject">
-                <option value="">Choose your Subject</option>
-                <option value="order">Order Issue</option>
-                <option value="refund">Money not refunded</option>
-                <option value="delivery">Delivery not attepmted</option>
-                <option value="other">Other</option>
-                </select>
-            </p>
-            <p>Massage: <br> <textarea name="message" id="message" placeholder="Your Message to Us"></textarea></p>
-            <p><input type="submit" value="Send"></p>
-        </form>
+
+        <p>Thank you for your interest in Let's Eat. We're here to assist you with any inquiries or feedback you may have.
+        <br>Please feel free to reach out to us through any of the following channels:</p>
+        <br>
+        <div class="details">
+            <div>
+                <p>Main Line: <span>(+91) 9588415121</span>
+                <br>Reservations: <span>(+91) 9588165845</span></p>
+            </div>
+
+            <div>
+                <p>General Inquiries: <span>letseat.inq@gmail.com</span>
+                <br>Reservations: <span>letseat.reservation@hotmail.com</span></p>
+            </div>
+        </div>
+
+        <div class="btn">
+            <p><span>Help Us Improve</span></p>
+            <p>Share your feedback and experience through the below link</p>
+            <br>
+            <button id="signInBtn">Contact form</button>
+        </div>
+        
     </section>
+
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <form action="submit">
+                <p>Name: <br> <input type="text" name="name" placeholder="Enter your Name"></p>
+                <p>Email: <br> <input type="email" name="email" id="email" placeholder="yourname@gmail.com"></p>
+                <p>Subject: <br> <select name="subject" id="subject">
+                        <option value="">Choose your Subject</option>
+                        <option value="order">Order Issue</option>
+                        <option value="refund">Money not refunded</option>
+                        <option value="delivery">Delivery not attepmted</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>Massage: <br> <textarea name="message" id="message" placeholder="Your Message to Us"></textarea></p>
+                <p><input type="submit" value="Send"></p>
+            </form>
+        </div>
+    </div>
 
     <section>
         <div class="down">
@@ -181,7 +302,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
