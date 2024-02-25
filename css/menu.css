@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.900);
+    color: white;
+}
+
+/* Header and Navbar */
+header{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.logo span{
+    color: orange;
+}
+
+.logo i{
+    color: orange;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li a{
+    color: white;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header ul li a:hover{
+    color: orange;
+    transition: all .5s;
+    text-decoration: underline;
+}
+
+header .bar{
+    font-size: 30px;
+}
+
+header .bar a{
+    color: white;
+    margin: 0px 10px;
+}
+
+header .bar a:hover{
+    color: orange;
+    transition: .5s;
+}
+
+.bar div{
+    margin: 0px 10px;
+}
+
+.bar div:hover{
+    color: orange;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#menu-icon{
+    display: none;
+}
+
+/* Search Bar */
+.search-bar{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar #search{
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    margin: 0px 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.search-bar #submit{
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: midnightblue;
+    border: none;
+    color: white;
+    margin: 0px 10px;
+}
+
+.search-bar #submit:hover{
+    background-color: orangered;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:1000px){
+    header {
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    #menu-icon {
+        display: initial;
+        border: 2px solid grey;
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 20px 10px;
+        height: 70px;
+    }
+
+    header ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transition: all .5s ease-in-out;
+        background-color: black;
+        z-index: 20;
+    }
+
+    header ul li a {
+        display: block;
+        padding: 10px;
+        margin: 10px 10px;
+        border-left: 2px solid orange;
+    }
+
+    header ul {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .search-bar form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

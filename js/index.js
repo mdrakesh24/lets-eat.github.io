@@ -12,6 +12,7 @@ function toggleMenu() {
   }
 }
 
+//Scroll Reveal
 const sr = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -27,7 +28,7 @@ sr.reveal('.review', {delay: 500});
 sr.reveal('.contact', {delay: 500});
 sr.reveal('.menu', {delay: 500});
 
-
+//Swiper JS
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   loop: true,

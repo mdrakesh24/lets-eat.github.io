@@ -117,12 +117,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
         margin: 10px 0px;
-    }
-
-    .fd2 div img {
-        width: 70%;
     }
 
     .review {
@@ -147,22 +142,32 @@
         padding-bottom: 20px;
     }
 
-
-    form {
-        width: 80%;
+    .details{
+        flex-direction: column;
     }
 
 }
 
-@media screen and (max-width:350px) {
-    header {
+@media screen and (max-width:550px) {
+    .ft{
+        display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ft div ul{
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 10px;
     }
+}
 
+@media screen and (max-width:400px) {
     .ft ul{
         flex-direction: column;
+    }
+
+    .modal-content{
+        min-width: 100%;
     }
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +55,7 @@ header ul li a:hover{
     text-decoration: underline;
 }
 
-header .bar{
+header .bar a{
     font-size: 30px;
 }
 
@@ -139,9 +140,9 @@ header .bar a:hover{
 }
 
 .btn button{
-    background-color: blueviolet;
+    background-color: midnightblue;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     height: 40px;
     width: 110px;
@@ -151,6 +152,7 @@ header .bar a:hover{
     background-color: orangered;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    transform: scale(1.1);
 }
 
 
@@ -258,6 +260,7 @@ header .bar a:hover{
     background-color: orangered;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 /* Section Food */
@@ -300,20 +303,30 @@ header .bar a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 280px;
     height: 300px;
-    border-radius: 10px;
     margin: 10px;
+    padding: 5px 0px;
+    border-radius: 10px;
     background-color: rgba(128, 128, 128, 0.250);
 }
 
 .fd2 div img{
     width: 100%;
+    height: 100%;
     padding: 0px 5px;
     object-fit: cover;
     overflow: hidden;
 }
+
+.fd2 div img:hover{
+    opacity: 0.7;
+    transition: opacity ease-in-out 0.3s;
+    cursor: pointer;
+}
+
 .fd2 div h4{
+    margin: 10px 0px 0px 0px;
     font-family: Ubuntu;
 }
 .fd2 div h5{
@@ -391,41 +404,7 @@ header .bar a:hover{
     font-family: overpass;
 }
 
-/* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
-.modal-content {
-    background-color: rgb(0, 32, 32);
-    margin: 20vh auto;
-    padding: 20px;
-    border-radius: 5px;
-    width: fit-content;
-    color: white;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
 /* Contact us form */
@@ -476,12 +455,49 @@ header .bar a:hover{
     font-weight: 600;
 }
 
-form{
-    width: 350px;
-    padding: 10px;
-    border: 1px solid grey;
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 350px;
+    margin: 20vh auto;
+    padding: 20px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -496,17 +512,23 @@ input[type="text"], input[type="email"]{
     width: 100%;
     padding: 10px;
     font-size: 12px;
+    border-radius: 3px;
+    border: none;
 }
 
 #subject{
     padding: 10px;
     width: 100%;
     font-size: 12px;
+    border-radius: 3px;
+    border: none;
 }
 #message{
     width: 100%;
     height: 60px;
     padding: 5px;
+    border-radius: 3px;
+    border: none;
 }
 
 input[type="submit"]{
@@ -541,60 +563,85 @@ input[type="submit"]:hover{
 }
 
 .down img:hover{
-    box-shadow: 0px 0px 5px white;
     transform: scale(1.1);
 }
 
-/* Section Footer */
 
-.foot{
+/* **************Social Media Handles************ */
+.follow{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.foot h2{
+
+.follow h2{
     font-family: Nunito;
     color: orange;
     padding: 10px;
 }
 
-.social a{
+.follow .social a{
     font-size: 40px;
     margin: 0px 10px;
     border-radius: 5px;
     color: white;
 }
-.social a i:hover{
+.follow .social a i:hover{
     color: lightseagreen;
     transition: all .3s;
 }
 
-.ft ul{
+/* ***************Section Footer***************** */
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot h3{
+    font-family: Nunito;
+    color: orange;
+    padding: 10px;
+}
+
+.ft{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.ft div{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
     align-items: center;
 }
-.ft ul li{
-    padding: 10px 15px;
+
+.ft div ul li{
+    padding: 5px;
+}
+
+.ft div ul li a{
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.ft ul li a{
-    color: white;
-}
-.ft ul li a:hover{
+
+.ft div ul li a:hover{
     color:lightsalmon;
     transition: all .3s;
 }
 
-.copy a{
+
+/* ******************Copyright Section******************** */
+.copy p a{
     padding-bottom: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size: 12px;
 }
-.copy a:hover{
+.copy p{
+    text-align: center;
+}
+.copy p a:hover{
     color:lightsalmon;
     transition: all .3s;
 }

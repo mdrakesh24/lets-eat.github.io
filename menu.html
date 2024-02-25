@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Let's Eat | Menu</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="#"><i class='bx bx-restaurant'></i> Let's <span>Eat</span></a>
+
+        <ul id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="bar">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-cart-alt'></i></a>
+            <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-bar">
+            <form action="submit">
+                <input type="search" name="search" id="search" placeholder="search dishes here">
+                <input type="submit" value="Search" id="submit">
+            </form>
+        </div>
+        <div class="card-holder">
+            <div class="card">
+                <img src="" alt="">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
+</body>
+</html>
