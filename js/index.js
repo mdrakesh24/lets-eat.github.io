@@ -20,13 +20,13 @@ const sr = ScrollReveal({
   reset: true
 });
 
-sr.reveal('.home', {delay: 500});
-sr.reveal('.container', {delay: 500});
-sr.reveal('.about', {delay: 500});
-sr.reveal('.food', {delay: 500});
-sr.reveal('.review', {delay: 500});
-sr.reveal('.contact', {delay: 500});
-sr.reveal('.menu', {delay: 500});
+sr.reveal('.home', {delay: 300});
+sr.reveal('.container', {delay: 300});
+sr.reveal('.about', {delay: 300});
+sr.reveal('.food', {delay: 300});
+sr.reveal('.review', {delay: 300});
+sr.reveal('.contact', {delay: 300});
+sr.reveal('.menu', {delay: 300});
 
 //Swiper JS
 var swiper = new Swiper(".mySwiper", {
